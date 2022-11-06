@@ -55,9 +55,10 @@ class Dashboard extends CI_Controller
 
 	public function table()
 	{
+		$data['datas'] = $this->db_akun->tampil_datasensor()->result();
 		$this->load->view('templates/header');
 		$this->load->view('templates/sidebar');
-		$this->load->view('table');
+		$this->load->view('table', $data);
 		$this->load->view('templates/footer');
 	}
 	public function edit($id)

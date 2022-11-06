@@ -28,6 +28,10 @@ class Db_akun extends CI_Model
 	{
 		return $this->db->get('tb_akun');
 	}
+	public function tampil_datasensor()
+	{
+		return $this->db->get('tb_datasensor');
+	}
 	public function tampil_pengaturan()
 	{
 		return $this->db->get('tb_pengaturan');
