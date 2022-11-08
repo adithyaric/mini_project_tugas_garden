@@ -7,6 +7,10 @@ class Dashboard extends CI_Controller
 	{
 		parent::__construct();
 
+		if ($this->session->userdata('status') != "login") {
+			redirect(base_url("login"));
+		}
+
 		header('Cache-Control: no-cache, must-revalidate, max-age=0');
 		header('Cache-Control: post-check=0, pre-check=0', false);
 		header('Pragma: no-cache');

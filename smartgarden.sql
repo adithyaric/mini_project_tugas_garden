@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 06, 2022 at 06:00 AM
+-- Generation Time: Nov 08, 2022 at 12:04 PM
 -- Server version: 5.7.33
 -- PHP Version: 8.0.20
 
@@ -32,7 +32,7 @@ CREATE TABLE `tb_akun` (
   `username` varchar(100) NOT NULL,
   `foto` varchar(1000) NOT NULL,
   `email` varchar(20) NOT NULL,
-  `password` varchar(20) NOT NULL
+  `password` varchar(225) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -40,9 +40,7 @@ CREATE TABLE `tb_akun` (
 --
 
 INSERT INTO `tb_akun` (`id`, `username`, `foto`, `email`, `password`) VALUES
-(1, 'adibfar', '', 'adibfar@gmail.com', 'adibgemin'),
-(3, 'askmldhk', '', 'adibfar@gmail.com', 'mzldsuhg'),
-(4, 'atfg', 'Hitam-putih8.gif', 'bayu10661@gmail.com', 'aSDGTRFYUJ');
+(5, 'admin', 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3');
 
 -- --------------------------------------------------------
 
@@ -116,7 +114,7 @@ ALTER TABLE `tb_pengaturan`
 -- AUTO_INCREMENT for table `tb_akun`
 --
 ALTER TABLE `tb_akun`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tb_datasensor`
